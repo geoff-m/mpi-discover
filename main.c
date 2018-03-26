@@ -13,6 +13,10 @@ int main(int argc, char** argv) {
     DiscoverMessage* msg = malloc(sizeof(DiscoverMessage));
     msg->procID = rank;
 
+	// todo: set other msg fields
+
+	// todo: gather
+
 
     /*
      * sample gather call
@@ -26,6 +30,8 @@ int main(int argc, char** argv) {
                        MPI_COMM_WORLD); // world
      *
      */
+
+	// todo: if root, process and display results
 
     MPI_Finalize();
     return 0;
