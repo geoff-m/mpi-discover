@@ -9,11 +9,11 @@ long getTotalMemory()
     return (long)info.totalram;
 }
 
-long getMemoryInUse()
+long getFreeMemory()
 {
 	struct sysinfo info;
 	sysinfo(&info);
 
-	return (long)info.usedram; // idk what this member is called.
+	return (long)(info.freeram);
 }
 

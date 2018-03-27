@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.9)
 project(mpi_discover C)
+find_package(MPI REQUIRED)
 set(CMAKE_C_STANDARD 99)
 
-add_executable(mpi_discover main.c DiscoverMessage.h DiscoverMessage.c SystemInformation.c SystemInformation.h)
+add_executable(mpi_discover main.c DiscoverMessage.h DiscoverMessage.c SystemInformation.h SystemInformation.c)
 target_include_directories(mpi_discover PRIVATE ${MPI_C_INCLUDE_PATH})
 target_link_libraries(mpi_discover ${MPI_C_LIBRARIES})
 

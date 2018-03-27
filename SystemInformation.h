@@ -5,5 +5,8 @@
 
 #include <sys/sysinfo.h>
 
+long getTotalMemory();
+
+long getFreeMemory();
 
 #endif //MPI_DISCOVER_SYSTEMINFORMATION_H
