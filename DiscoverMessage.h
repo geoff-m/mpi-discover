@@ -1,7 +1,8 @@
-#include <mpi/mpi.h>
 
 #ifndef MPI_DISCOVER_DISCOVERMESSAGE_H
 #define MPI_DISCOVER_DISCOVERMESSAGE_H
+
+#include <mpi.h>
 
 typedef struct DiscoverMessage
 {

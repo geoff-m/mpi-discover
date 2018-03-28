@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <mpi/mpi.h>
+#include <mpi.h>
 #include "DiscoverMessage.h"
 #include "SystemInformation.h"
 #include <stdlib.h>
